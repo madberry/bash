@@ -1,4 +1,8 @@
 #!/bin/bash
+#In Kubuntu(KDE) the NetworkManager seems to disconnect the VPN
+#for no reason.  This script will keep you connect to you VPN.
+#You can added it as an autostart script.
+#System Settings->Startup and Shutdown add as script here.
 while [ "true" ]
 do
 	VPNCON=$(nmcli con status)
